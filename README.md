@@ -25,9 +25,9 @@ Performing the Hungarian Algorithm by hand might be time inefficient and risky b
 
 ### Methods
 
-The main function is titled hungarian_algorithm which takes parameters matrix and type with type being optional. The matrix is a  2-D n x n numpy array. The optional parameter type is the type of the problem to be solved. By default, type is "min" i.e. the algorithm aims to minimize the sum of the entries in the matrix. If the type is set to "max", the algorithm runs to maximize.  If something else is given for type, it defaults to minimization.
+The main function is titled hungarian_algorithm which takes parameters matrix and type with type being optional. The matrix is a  2-D n x n numpy array. The optional parameter type is the type of the problem to be solved. By default, type is `min` i.e. the algorithm aims to minimize the sum of the entries in the matrix. If the type is set to `max`, the algorithm runs to maximize.  If something else is given for type, it defaults to minimization.
 
-Before running the algorithm, the code checks if the matrix provided is compatible to run the Hungarian algorithm. This is achieved by a function called type_check. This function takes a numpy array and checks if the array is n x n, and if all entries are non-negative integers. If any of these conditions are not passed, it returns false. If all of them are satisfied, it returns true and proceeds to the next steps.
+Before running the algorithm, the code checks if the matrix provided is compatible to run the Hungarian algorithm. This is achieved by a function called `type_check`. This function takes a numpy array and checks if the array is n x n, and if all entries are non-negative integers. If any of these conditions are not passed, it returns false. If all of them are satisfied, it returns true and proceeds to the next steps.
  
 #### Reduce
 i. `reduce`
