@@ -46,11 +46,11 @@ This function takes an array, uses `min_zero` to find the zero that is to be box
 The second element is the row where the boxed zero can be found. The third element is the column where the boxed zero can be found.
 
 iv. `cover_helper`
-This is the primary function of the cover step and takes the following parameters:
-`matrix`: The original matrix we are trying to cover.
-`matrix_copy`: The matrix after we have covered some lines. Once a row or column is covered, all elements of this copy are replaced with -1.
-`covered_zeros`: The number of zeros we have covered so far. This helps us know when to terminate the cover step i.e. when we have covered all zeros.
-`cover_array`: A 2 x n array of 0's and 1's that includes which rows/ columns are covered right now. 1 means covered and 0 means uncovered.
+This is the primary function of the cover step and takes the following parameters: <br/>
+`matrix`: The original matrix we are trying to cover. <br/>
+`matrix_copy`: The matrix after we have covered some lines. Once a row or column is covered, all elements of this copy are replaced with -1. <br/>
+`covered_zeros`: The number of zeros we have covered so far. This helps us know when to terminate the cover step i.e. when we have covered all zeros. <br/>
+`cover_array`: A 2 x n array of 0's and 1's that includes which rows/ columns are covered right now. 1 means covered and 0 means uncovered. <br/>
 	The function uses recursion to do the covering and returns the cover array.
 
 v. `cover`
